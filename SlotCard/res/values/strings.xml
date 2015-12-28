@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SlotCardDemo</string>
+    <string name="ok">确定</string>
+    <string name="error">异常</string>
+    <string name="message_track_data_error_decrypted">未能读取卡信息, 请重新刷卡.
+    </string>
+    <string name="message_track_data_error_checksum">未能读取卡信息, 请重新刷卡.
+    </string>
+    <string name="message_track_data_error_ksn">The key serial number does not match with the settings.</string>
+    <string name="message_track_data_error_ec">The encryption counter is invalid.</string>
+    <string name="processing_data">正在读取卡信息...</string>
+    <string name="insertion_device">未检测到刷卡设备\n请插入刷卡设备</string>
+    <string name="check_light">刷卡前请检查刷卡器指示灯是否显示绿光, \n如未显示绿光,请尝试重新插入刷卡器\n或者重启APP.</string>
+    <string name="reset_device">唤醒设备</string>
+    <string name="str_or">或者</string>
+    <string name="question_answer">1. 使用前请插入刷卡器\n2. 插入刷卡器后最好调节音量为最大\n3. 使用时, 请确定刷卡器绿灯光亮\n4. 绿灯亮则可以刷卡\n5. 如绿灯未亮, 可尝试重新插拔刷卡器或者重启APP或者点击"唤醒设备"\n6. 如尝试之前操作绿灯都不亮, 请充电尝试
+    </string>
+    <string name="close">关闭</string>
+</resources>
