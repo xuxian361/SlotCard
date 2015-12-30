@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Bugtags-Android-Eclipse-Lib/Bugtags-Android-Eclipse-Lib.iml" filepath="$PROJECT_DIR$/../Bugtags-Android-Eclipse-Lib/Bugtags-Android-Eclipse-Lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlotCard.iml" filepath="$PROJECT_DIR$/SlotCard.iml" />
     </modules>
   </component>

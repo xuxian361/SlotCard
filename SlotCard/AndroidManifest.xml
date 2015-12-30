@@ -6,10 +6,21 @@
     <uses-sdk android:minSdkVersion="19"/>
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application android:label="@string/app_name"
                  android:icon="@drawable/ic_launcher"
-                 android:theme="@android:style/Theme.Light.NoTitleBar">
+                 android:theme="@android:style/Theme.Light.NoTitleBar"
+                 android:name=".MyApp">
         <activity android:name=".MainActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait">
@@ -21,6 +32,22 @@
 
         <activity android:name=".QuestionActivity"
                   android:screenOrientation="portrait"/>
+
+        <activity android:name=".BaseActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity
+                android:name="com.bugtags.library.BugtagsActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver
+                android:name="com.bugtags.library.BugtagsReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service
+                android:name="com.bugtags.library.BugtagsService"/>
 
     </application>
 </manifest>

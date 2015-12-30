@@ -18,7 +18,7 @@ import java.security.GeneralSecurityException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     private final String TAG = "MainActivity";
     public static final String DEFAULT_MASTER_KEY_STRING = "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
